@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.mytring">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="package_name.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mytring_logo"
+        android:label="MyTring"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD4bJZ1ndrIPCpdaq_TE0o1YD-86OmDMOg" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SwitchNetworkActivity">
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".SpeedTestActivity">
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".WifiActivity">
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Settings">
+            android:screenOrientation="portrait">
+        </activity>
+
+        <service
+            android:name=".ListenerService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <uses-library android:name="com.google.android.maps" />
+
+    </application>
+
+</manifest>

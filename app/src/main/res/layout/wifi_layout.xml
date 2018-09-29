@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/switchnw_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.mytring.WifiActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:contentDescription="WiFi Dashboard"
+            app:srcCompat="@drawable/titlebar_red" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:text="WiFi Dashboard"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.1">
+        <ImageView
+            android:id="@+id/WiFi_details_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:contentDescription="Wifi Details"
+            app:srcCompat="@drawable/wifi_details_image" />
+            <TextView
+                android:id="@+id/Wifi_details_text"
+                android:layout_width="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:text=""
+                android:textSize="20dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:paddingTop="3dp"
+        android:background="@color/colorLightGrey"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WIFI NAME"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WIFI TYPE"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STRENGTH(dBm)"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:paddingBottom="10dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.4"
+        android:paddingTop="5dp"
+        android:adjustViewBounds="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/scrollView_SSIDText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:paddingBottom="10dp"/>
+            <TextView
+                android:id="@+id/scrollView_networkTypeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:paddingBottom="10dp"/>
+            <TextView
+                android:id="@+id/scrollView_StrengthText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:paddingBottom="10dp"/>
+        </LinearLayout>
+
+        <!--ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list">
+        </ListView-->
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:contentDescription="Mobile Dashboard"
+            android:onClick="mobileDashboard"
+            app:srcCompat="@drawable/mobile_unclicked" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:contentDescription="Wifi Dashboard"
+            app:srcCompat="@drawable/wifi_clicked" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:contentDescription="Switch Network"
+            android:onClick="switchNetwork"
+            app:srcCompat="@drawable/switchtower_unclicked" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:contentDescription="Speed Test"
+            android:onClick="speedTest"
+            app:srcCompat="@drawable/speedtest_unclicked" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:contentDescription="Settings"
+            android:onClick="settings"
+            app:srcCompat="@drawable/settings_unclicked" />
+    </LinearLayout>
+</LinearLayout>

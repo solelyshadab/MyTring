@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/switchnw_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.mytring.SpeedTestActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:contentDescription="Speed Test"
+            app:srcCompat="@drawable/titlebar_red" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:text="Speed Test"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:contentDescription="Speed Test Results"
+            app:srcCompat="@drawable/wifi_details_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:adjustViewBounds="true"
+                android:text="Connection"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:adjustViewBounds="true"
+                android:text="Download"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:adjustViewBounds="true"
+                android:text="Upload"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:adjustViewBounds="true"
+                android:text="Wifi Name"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView android:id="@+id/wifiDownloadSpeed"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:adjustViewBounds="true"
+                android:text="0 Mbps"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:adjustViewBounds="true"
+                android:text="0 Mbps"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:adjustViewBounds="true"
+                android:text="SIM 1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:adjustViewBounds="true"
+                android:text="0 Mbps"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:adjustViewBounds="true"
+                android:text="0 Mbps"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:adjustViewBounds="true"
+                android:text="SIM 2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:adjustViewBounds="true"
+                android:text="0 Mbps"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:adjustViewBounds="true"
+                android:text="0 Mbps"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="horizontal"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:contentDescription="Speed Test"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/titlebar_red" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:paddingTop="10dp"
+            android:text="Switch to best network?"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:paddingBottom="10dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:onClick="startSpeedTest"
+                app:srcCompat="@drawable/start_button"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:text="Start"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="40dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:adjustViewBounds="true"
+            android:contentDescription="Mobile Dashboard"
+            android:onClick="mobileDashboard"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/mobile_unclicked" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:adjustViewBounds="true"
+            android:contentDescription="Wifi Dashboard"
+            android:onClick="wifiDashboard"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/wifi_unclicked" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:adjustViewBounds="true"
+            android:contentDescription="Switch Tower"
+            android:onClick="switchNetwork"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/switchtower_unclicked" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:adjustViewBounds="true"
+            android:contentDescription="Speed Test"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/speedtest_clicked" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:adjustViewBounds="true"
+            android:contentDescription="Settings"
+            android:onClick="settings"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/settings_unclicked" />
+    </LinearLayout>
+</LinearLayout>
